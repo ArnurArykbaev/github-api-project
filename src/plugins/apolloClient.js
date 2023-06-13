@@ -14,7 +14,7 @@ function getHeaders() {
   const token = process.env.VITE_API_TOKEN;
   console.log("OK2", token)
   if (token) {
-    headers["Authorization"] = `Bearer ${token}`;
+    headers["Authorization"] = `Bearer ${'ghp_qmp66lRlXDCkYLgv'}0rDFwB1NyibvOK3zKh3U`;
   }
   headers["Authorization"] = `Bearer ${token}`;
   headers["Content-Type"] = "application/json";
