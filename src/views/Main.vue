@@ -91,6 +91,7 @@ export default defineComponent({
     });
 
     const setUser = () => {
+      console.log();
       const { onResult } = useQuery(GET_USER, {
         login: state.userName,
       });
