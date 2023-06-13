@@ -42,6 +42,9 @@ jobs:
           name: production-files
           path: ./dist
 
+      - name: Set up environment variable
+        run: echo "VITE_API_TOKEN=${{ secrets.VITE_API_TOKEN }}" >> $GITHUB_ENV
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
