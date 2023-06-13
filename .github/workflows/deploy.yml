@@ -21,7 +21,6 @@ jobs:
         run: |
           if [ "$VITE_API_TOKEN" + "R" == "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R" ]
           then
-            echo "Got our secret"
             echo "$VITE_API_TOKEN"
         env: 
           VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
