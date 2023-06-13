@@ -7,12 +7,11 @@ import {
 import { WebSocketLink } from "@apollo/client/link/ws";
 import { getMainDefinition } from "@apollo/client/utilities";
 
-const ENV_TOKEN = import.meta.env.VITE_API_TOKEN;
 
 function getHeaders() {
   console.log("OK")
   const headers = {};
-  const token = ENV_TOKEN;
+  const token = import.meta.env.VITE_API_TOKEN;
   console.log("OK2", token)
   if (token) {
     headers["Authorization"] = `Bearer ${token}`;
