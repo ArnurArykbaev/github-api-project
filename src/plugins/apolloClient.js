@@ -12,6 +12,8 @@ function getHeaders() {
   console.log("OK")
   const headers = {};
   const token = import.meta.env.VITE_API_TOKEN;
+  const key = import.meta.env.VITE_API_KEY;
+  console.log("OK2", key)
   console.log("OK2", token)
   if (token) {
     headers["Authorization"] = `Bearer ${token}`;
