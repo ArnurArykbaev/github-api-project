@@ -22,12 +22,6 @@ jobs:
           VITE_API_TOKEN: ${{ secrets.VITE_API_TOKEN }}
         run: echo "VITE_API_TOKEN=$VITE_API_TOKEN"
 
-        
-      - name: Testing Secrets
-        env: 
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
-        run: echo "VITE_API_KEY=$VITE_API_KEY"
-
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
@@ -52,12 +46,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
-          publish_dir: ./dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

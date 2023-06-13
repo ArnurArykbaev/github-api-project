@@ -11,9 +11,7 @@ import { getMainDefinition } from "@apollo/client/utilities";
 function getHeaders() {
   console.log("OK")
   const headers = {};
-  const token = import.meta.env.VITE_API_TOKEN;
-  const key = import.meta.env.VITE_API_KEY;
-  console.log("OK2", key)
+  const token = process.env.VITE_API_TOKEN;
   console.log("OK2", token)
   if (token) {
     headers["Authorization"] = `Bearer ${token}`;
