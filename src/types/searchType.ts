@@ -1,0 +1,1 @@
+export type SeachType = "DISCUSSION" | "ISSUE" | "REPOSITORY" | "USER"
