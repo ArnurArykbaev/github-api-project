@@ -19,7 +19,7 @@ jobs:
 
       - name: Testing Secrets
         run: |
-          if [ "$VITE_API_TOKEN" == "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" ]
+          if [ "$VITE_API_TOKEN" + "R" == "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R" ]
           then
             echo "Got our secret"
             echo "$VITE_API_TOKEN"
